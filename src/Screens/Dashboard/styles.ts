@@ -12,7 +12,7 @@ export const Header = styled.View`
     height: ${RFPercentage(42)}px;
     background-color: ${({ theme }) => theme.colors.primary};
 
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
 `;
@@ -20,6 +20,7 @@ export const Header = styled.View`
 export const UserWrapper = styled.View`
     width: 100%;
     padding: 0 24px;
+    margin-top: ${RFValue(28)}px;
 
     flex-direction: row;
     align-items: center;
@@ -63,5 +64,8 @@ export const HighlightCards = styled.ScrollView.attrs({
     showsHorizontalScrollIndicator: false,
     contentContainerStyle: { paddingHorizontal: 24 }
 })`
-    
+    width: 100%;
+
+    position: absolute;
+    margin-top: ${RFPercentage(20)}px;
 `;
